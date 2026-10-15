@@ -1,0 +1,151 @@
+.travel-hero {
+  padding-top: 2rem;
+}
+
+.travel-hero__intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  padding: 0 5%;
+}
+
+.travel-hero .eyebrow {
+  justify-content: center;
+}
+
+.travel-hero h1 {
+  font-size: clamp(3.5rem, 6.5vw, 6.1rem);
+  line-height: 1.09;
+  letter-spacing: -0.055em;
+  margin: 1.3rem 0;
+}
+
+.travel-hero h1 em {
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.travel-hero__intro > p:not(.eyebrow) {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  max-width: 400px;
+  margin: auto;
+  color: var(--color-muted);
+}
+
+.travel-hero .text-action {
+  margin-top: 1rem;
+}
+
+.travel-hero__landscape {
+  position: relative;
+  margin: 0 2%;
+  height: clamp(360px, 37vw, 580px);
+  border-radius: var(--radius);
+}
+
+.travel-hero__landscape > img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center 56%;
+}
+
+.travel-hero__landscape::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(0deg, #122b1e80, transparent 65%);
+  pointer-events: none;
+}
+
+.travel-hero figcaption {
+  position: absolute;
+  z-index: 1;
+  bottom: 2.5rem;
+  left: 3.5%;
+  right: 3.5%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  color: var(--color-on-dark);
+}
+
+.travel-hero figcaption > span {
+  font: italic 2.4rem var(--font-display);
+  letter-spacing: -0.04em;
+}
+
+.travel-hero figcaption small {
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.travel-hero__seal {
+  position: absolute;
+  right: 3%;
+  top: -30px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  background: var(--color-soft);
+  border: 8px solid var(--color-paper);
+  border-radius: 50%;
+}
+
+.travel-hero__seal svg {
+  width: 38px;
+  height: 38px;
+  stroke-width: 1;
+}
+
+@media (max-width: 700px) {
+  .travel-hero {
+    padding-top: 1.8rem;
+  }
+  .travel-hero__intro {
+    padding: 0 6%;
+    margin-bottom: 2.5rem;
+  }
+  .travel-hero h1 {
+    font-size: clamp(2.9rem, 11.5vw, 4.5rem);
+  }
+  .travel-hero .eyebrow {
+    font-size: 0.54rem;
+    letter-spacing: 0.08em;
+  }
+  .travel-hero__intro > p:not(.eyebrow) {
+    font-size: 0.79rem;
+  }
+  .travel-hero__landscape {
+    height: 365px;
+    margin: 0 4%;
+  }
+  .travel-hero figcaption {
+    left: 6%;
+    bottom: 1.5rem;
+    right: 6%;
+    display: grid;
+    gap: 0.7rem;
+  }
+  .travel-hero figcaption > span {
+    font-size: 1.65rem;
+  }
+  .travel-hero figcaption small {
+    font-size: 0.5rem;
+  }
+  .travel-hero__seal {
+    width: 65px;
+    height: 65px;
+    top: -25px;
+  }
+  .travel-hero__seal svg {
+    width: 30px;
+    height: 30px;
+  }
+}

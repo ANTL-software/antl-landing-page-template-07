@@ -1,0 +1,159 @@
+.travel-booking {
+  padding-block: var(--section-space);
+}
+
+.travel-booking__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: start;
+}
+
+.travel-booking h2 {
+  margin: 1.3rem 0;
+  max-width: 470px;
+}
+
+.travel-booking__copy > p:not(.eyebrow) {
+  max-width: 400px;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+
+.booking-summary {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--color-line);
+}
+
+.booking-summary > svg {
+  font-size: 1.3rem;
+}
+
+.booking-summary div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.booking-summary strong {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.booking-summary span {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+}
+
+.travel-booking__copy > .demo-note {
+  font-size: 0.7rem !important;
+}
+
+.booking-card {
+  padding: 2rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  box-shadow: 0 15px 45px #263d3208;
+}
+
+.experience-select,
+.travel-booking-widget label {
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  margin-top: 1.1rem;
+}
+
+.experience-select {
+  margin-top: 0;
+}
+
+.booking-card input,
+.booking-card select {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 5px;
+  color: var(--color-ink);
+  font-size: 16px;
+  min-height: 48px;
+}
+
+.travel-booking-widget h2 {
+  font: 500 1.3rem var(--font-display);
+  margin: 1.8rem 0 1.2rem;
+}
+
+.site-booking-widget__slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+}
+
+.site-booking-widget__slots button {
+  padding: 0.7rem 1rem;
+  min-height: 46px;
+  border: 1px solid var(--color-line);
+  border-radius: 5px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.site-booking-widget__slots button:hover {
+  background: var(--color-soft);
+}
+
+.site-booking-widget__slots button.is-selected,
+.travel-booking-widget form button {
+  background: var(--color-ink);
+  color: var(--color-on-dark);
+  border-color: var(--color-ink);
+}
+
+.travel-booking-widget form button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.travel-booking-widget form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.travel-booking-widget [role="status"],
+.travel-booking-widget [role="alert"] {
+  font-size: 0.83rem;
+  line-height: 1.8;
+}
+
+.travel-booking-widget [aria-live] {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .travel-booking__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .booking-card {
+    padding: 1.4rem;
+  }
+  .travel-booking__copy > p:not(.eyebrow) {
+    max-width: none;
+  }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+:root {
+  --color-paper: #f7f5ee;
+  --color-surface: #fffef9;
+  --color-ink: #263d32;
+  --color-muted: #657267;
+  --color-accent: #c7a66d;
+  --color-soft: #e8eddf;
+  --color-line: #d6ddcf;
+  --color-dark: #243a30;
+  --color-on-dark: #f7f5ee;
+  --font-body: "DM Sans", sans-serif;
+  --font-display: "Lora", Georgia, serif;
+  --radius: 12px;
+  --container: 1280px;
+  --section-space: clamp(4rem, 7vw, 7rem);
+}
